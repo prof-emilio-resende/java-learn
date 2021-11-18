@@ -12,5 +12,8 @@ public class App
         Types.testar();
         Controls.testar();
         Collections.testar();
+        Dynamics.testar();
+        Objects.testar();
+        Records.testar();
     }
 }
