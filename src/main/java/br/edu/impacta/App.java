@@ -11,5 +11,6 @@ public class App
         System.out.println( "Hello World!" );
         Types.testar();
         Controls.testar();
+        Collections.testar();
     }
 }
