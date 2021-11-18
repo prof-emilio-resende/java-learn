@@ -50,5 +50,43 @@ public class Collections {
 
         List<Map<String, String>> complexFancyRecord = List.of(Map.of("chave", "valor"));
         System.out.println(complexFancyRecord);
+
+        System.out.println("for tradicional...");
+        for (int i = 0; i < nameList.size(); i++) {
+            System.out.println(nameList.get(i));
+        }
+
+        System.out.println("for each...");
+        for (String text : nameList) {
+            System.out.println(text);
+        }
+
+        System.out.println("foreach map keys...");
+        for (String chave : basicMapFancy.keySet()) {
+            System.out.println(chave);
+        }
+
+        System.out.println("foreach map values...");
+        for (String valor : basicMapFancy.values()) {
+            System.out.println(valor);
+        }
+
+        System.out.println("foreach map keys, print values...");
+        for (String chave : basicMapFancy.keySet()) {
+            System.out.println(chave);
+            System.out.println(basicMapFancy.get(chave));
+        }
+
+        System.out.println("foreach entries");
+        for (Map.Entry<String, String> entry : basicMapFancy.entrySet()) {
+            System.out.println(entry.getKey());
+            System.out.println(entry.getValue());
+        }
+
+        System.out.println("functional ...");
+        basicMapFancy.forEach((key, value) -> {
+            System.out.println(key);
+            System.out.println(value);
+        });
     }
 }
